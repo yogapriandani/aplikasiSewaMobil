@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.CompoundButton;
 
 public class MainActivity extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener {
-    CheckBox cbPL, cbPG, cbW;
+    CheckedBox cbPL, cbPG, cbW;
     EditText etNama, etID;
     RadioGroup rgJK;
     Button bPinjam;
