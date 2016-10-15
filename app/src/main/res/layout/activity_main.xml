@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.smktelkomspmalang.tugas001.MainActivity">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/logo" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTextNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTextID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ID KTP"
+                android:inputType="numberSigned" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textViewJK1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginTop="4dp"
+            android:gravity="center_horizontal|left"
+            android:padding="8dp"
+            android:text="Jenis Kelamin : "
+            android:textColor="@color/colorAccent"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupJK"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Pria" />
+
+            <RadioButton
+                android:id="@+id/radioButtonW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Wanita" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewS"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginTop="4dp"
+            android:gravity="center_horizontal|left"
+            android:padding="8dp"
+            android:text="Status :"
+            android:textColor="@color/colorAccent"
+            android:textSize="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxPL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Mahasiswa" />
+
+        <CheckBox
+            android:id="@+id/checkBoxPG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Pegawai" />
+
+        <CheckBox
+            android:id="@+id/checkBoxW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Wiraswasta" />
+
+        <TextView
+            android:id="@+id/textViewLB"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginTop="4dp"
+            android:gravity="center_horizontal|left"
+            android:padding="8dp"
+            android:text="Lihat Mobil :"
+            android:textColor="@color/colorAccent"
+            android:textSize="16dp" />
+
+        <Spinner
+            android:id="@+id/spinnerMobil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:entries="@array/Mobil"
+            android:gravity="center_horizontal|left"
+            android:padding="8dp"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/buttonPinjam"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgbtn"
+            android:text="Pinjam"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/textViewNama"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginTop="4dp"
+            android:gravity="center_horizontal|left"
+            android:padding="8dp"
+            android:text="Nama"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textViewID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginTop="4dp"
+            android:gravity="center_horizontal|left"
+            android:padding="8dp"
+            android:text="ID"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textViewJK"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginTop="4dp"
+            android:gravity="center_horizontal|left"
+            android:padding="8dp"
+            android:text="JK"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textViewStatus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginTop="4dp"
+            android:gravity="center_horizontal|left"
+            android:padding="8dp"
+            android:text="Status"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textViewMobil"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:gravity="center_horizontal|left"
+            android:padding="8dp"
+            android:text="Mobil"
+            android:visibility="visible" />
+
+    </LinearLayout>
+</ScrollView>
